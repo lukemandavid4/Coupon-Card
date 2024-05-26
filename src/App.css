@@ -6,3 +6,49 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+.container{
+  background: linear-gradient( #8516e6, #ab64e9);
+  width: 35rem;
+  height: 18rem;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.container__image{
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.container__image img{
+  width: 15rem;
+}
+.container__description{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container__description span{
+  color: #fff;
+}
+.container__coupon{
+  display: flex;
+  align-items: center;
+}
+.container__coupon--one{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+}

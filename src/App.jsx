@@ -11,8 +11,8 @@ const App = () => {
         <span>Using HDFC Credit Card</span>
       </div>
       <div className="container__coupon">
-        <span>AA-784-421</span>
-        <span>COPY CODE</span>
+        <span className='container__coupon--one'>AA-784-421</span>
+        <span className='container__coupon--two'>COPY CODE</span>
       </div>
       <div className="container__valid">
         <span>Valid Till: 20 Dec 2027</span>
