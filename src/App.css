@@ -17,11 +17,35 @@ body{
   width: 35rem;
   height: 18rem;
   border-radius: 1rem;
-  padding: 2rem 2.5rem;
+  padding: 2rem 2.5rem 0 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.container::before{
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container::after{
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .container__image{
   width: 5rem;
@@ -46,9 +70,20 @@ body{
 .container__coupon{
   display: flex;
   align-items: center;
+  margin-top: -1rem;
 }
 .container__coupon--one{
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px dashed #fff;
   padding: 0.5rem;
+}
+.container__coupon--two{
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.container__valid{
+  margin-top: -1rem;
+  color: #fff;
 }
