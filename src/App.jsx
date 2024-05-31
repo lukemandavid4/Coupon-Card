@@ -38,7 +38,7 @@ const App = () => {
         <span className='container__coupon--two' onClick={handleClick} ref={copy}>COPY CODE</span>
       </div>
       <div className="container__valid">
-        <span>Valid Till: 20 Dec 2027</span>
+        <span>Valid Till: 20 Dec 2028</span>
       </div>
     </div>
   )
